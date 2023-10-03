@@ -11,8 +11,8 @@ function arrtoObj(arr) {
 }
 
 // question 2
-function getyyflat(arr) {
-    return arr.flat(arr.length);
+function arrayDepth(arr) {
+    return arr.flat(Infinity);
 }
 
 
