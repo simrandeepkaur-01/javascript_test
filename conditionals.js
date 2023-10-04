@@ -1,5 +1,5 @@
 // Q 1. Create a function that takes a string and returns the first character that repeats. If there is no repeat of a character, return "-1".firstRepeat("Isildur") ➞ "-1"
- //Case sensitive "I" not equal to "i"
+//Case sensitive "I" not equal to "i"
 
 function firstRepeat(val) {
     let str = {};
@@ -9,16 +9,16 @@ function firstRepeat(val) {
 
         if (str[char]) {
             return char;
-        };
+        }
 
-        str[char] = true;
+        str[char] = str;
     }
     return -1;
 }
-console.log(firstRepeat('Isildur'));
+console.log(firstRepeat('simran'));
 
 
-// Q 2. JavaScript Program to Check Whether a Number is Palindrome or Not? Using operators
+// Q 2. JavaScript Program to Check Whether a ier is Palindrome or Not? Using operators
 
 function palindrome(num) {
     let numToCheck = String(num);
@@ -35,21 +35,21 @@ function palindrome(num) {
 palindrome(123454321);
 
 
-// Q 3. JavaScript Program to Check Whether a Number is Armstrong or Not? Using operators.
+// Q 3. JavaScript Program to Check Whether a ier is Armstrong or Not? Using operators.
 
 let num = 153;
 let numToStr = String(num);
 let numCount = numToStr.split('').length;
 sum = 0;
 
-for (i = 0; i < numToStr.length; i++) {
+for (i = 0; i < numCount; i++) {
     sum += numToStr[i] ** numCount;
 }
 
 if (num === sum) {
-    console.log(`${num} is an Armstrong Number`);
+    console.log(`${num} is an Armstrong number`);
 } else {
-    console.log(`${num} is not an Armstrong Number`);
+    console.log(`${num} is not an Armstrong number `);
 }
 
 
@@ -63,10 +63,19 @@ console.log(isValid);
 
 
 // Q 5. Write a code to swap the values of two variables a and b without using a temporary variable.
+
 let x = 10;
 let y = 5;
 
-// [x,y] = [y,x];
+if (x !== y) {
+    x = x + y;   //x = 15
+    y = x - y;   //y = 10
+    x = x - y;   // x = 5
+} else {
+    console.log('Value are same. No need to swap.');
+}
+
+// [x,y] = [y,x]; //Other Method.
 console.log(x, y);
 
 
@@ -84,3 +93,5 @@ function year(year) {
 }
 
 year(2020);
+
+
