@@ -19,16 +19,17 @@ fibonacci(0);
 
 //Sort an array without using sort().
 
-// let arr = [3, 1, 2];
-// let newVal = [];
+// let arr = [12, 1, 2, 44, 3, 8];
 
 // for (let i = 0; i < arr.length; i++) {
-//     values = (arr[i]);
-//     console.log(values);
-
-//     if (values > newVal) {
-//         console.log(true);
-//     } else {
-//         console.log(false);
+//     for (let j = i; j < arr.length; j++) {
+//         // console.log(`i is : ${i}`);
+//         // console.log(`j is : ${j}`);
+//         if (arr[i] > arr[j]) {
+//             console.log(arr[j]);
+//             let swap = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = swap;
+//         }
 //     }
 // }
