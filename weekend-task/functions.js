@@ -4,7 +4,6 @@
 
 
 function modulus(dividend, divisor) {
-
     for (let i = 1; i <= 100; i++) {
         let arrOfTable = divisor * i;
 
