@@ -124,7 +124,7 @@ let sortFun = function () {
             // sort alphabetically
             return a.lastName.localeCompare(b.lastName)
         }
-        return lengthComparison
+        return lengthComparison;
 
     })
     console.log(sortedNames);
